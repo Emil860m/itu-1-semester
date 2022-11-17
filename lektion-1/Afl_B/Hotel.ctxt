@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=Hotel
+comment1.params=name\ floors\ roomsPerFloor
+comment1.target=Hotel(java.lang.String,\ int,\ int)
+comment2.params=contact\ guests\ breakfast\ requestedFloor\ requestedRoomNo
+comment2.target=void\ addBooking(java.lang.String,\ int,\ boolean,\ int,\ int)
+comment2.text=Tilf\u00F8jer\ en\ ny\ booking\ til\ listen\ bookings.
+comment3.params=
+comment3.target=double\ avgGuests()
+comment3.text=Udregner\ det\ gennemsnitlige\ antal\ g\u00E6ster\ per\ booking.
+comment4.params=floors\ roomsPerFloor
+comment4.target=Room[][]\ buildHotel(int,\ int)
+comment4.text=\ Hj\u00E6lpemetode\ til\ constructoren.\r\nOpretter\ Room-objekter,\ som\ den\ tilf\u00F8jer\ til\ rooms.
+comment5.params=contact\ guests\ breakfast\ requestedFloor\ requestedRoomNo
+comment5.target=void\ checkAddBooking(java.lang.String,\ int,\ boolean,\ int,\ int)
+comment5.text=SKRIV\ DIN\ KODE\ HERUNDER
+comment6.params=
+comment6.target=void\ showHotel()
+comment7.params=
+comment7.target=double\ breakfastFactor()
+numComments=8

@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.target=Room
+comment1.params=floor\ room
+comment1.target=Room(int,\ int)
+comment2.params=
+comment2.target=boolean\ getBooked()
+comment3.params=
+comment3.target=void\ setBooked()
+comment4.params=
+comment4.target=int\ getFloor()
+comment5.params=
+comment5.target=int\ getRoom()
+numComments=6

@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=RoomAlreadyBookedException
+comment1.params=requestedFloor\ requestedRoom
+comment1.target=RoomAlreadyBookedException(int,\ int)
+comment2.params=
+comment2.target=java.lang.String\ getRoom()
+numComments=3

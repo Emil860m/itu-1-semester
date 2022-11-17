@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Booking
+comment1.params=contactPerson\ guests\ breakfastIncluded\ room
+comment1.target=Booking(java.lang.String,\ int,\ boolean,\ Room)
+comment2.params=
+comment2.target=int\ getGuests()
+comment3.params=
+comment3.target=boolean\ getBreakfastIncluded()
+comment4.params=
+comment4.target=Room\ getRoom()
+numComments=5

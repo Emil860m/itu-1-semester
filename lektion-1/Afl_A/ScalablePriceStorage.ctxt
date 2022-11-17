@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=ScalablePriceStorage
+comment1.params=storageId\ pricePerSquareMeter\ squareMeters
+comment1.target=ScalablePriceStorage(java.lang.String,\ double,\ int)
+comment2.params=sqmeters
+comment2.target=void\ rentSquareMeters(int)
+comment2.text=Rent\ additional\ square\ meters.\ Price\ gets\ updated\ automatically.
+comment3.params=
+comment3.target=void\ display()
+numComments=4

@@ -53,24 +53,45 @@ public class Game
             if (input.toLowerCase().equals("hit")) {
                 playerHand.add(deck.draw());
                 PrintLastCardDrawn(playerHand);
-                // check if above 21
-                if (CalculateScore(playerHand) > 21) {
-                    GameLoss();
-                }
-                // if yes: go to end game method
-                // if no: stay in loop
+                int score = CalculateScore(playerHand);
+                if (score > 21) GameLoss();
+                else if (score == 21) GameWin();
+                
+                
                 
             }
             else {
+                
+                System.out.println("\n\nDealer hand");
+                PrintHand(dealerHand);
+                System.out.println("\n\nYour Hand");
+                PrintHand(playerHand);
                 // go to end game method
+                EndGame(deck, playerHand, dealerHand);
             }
             
             //game = false; // test to make sure no infinite loop, remove later
         }
     }
     
-    private void EndGame() {
-        
+    private void EndGame(Deck deck, ArrayList<Card> playerHand, ArrayList<Card> dealerHand) {
+        game = false;
+        int playerScore = CalculateScore(playerHand);
+        while (CalculateScore(dealerHand) < 17) {
+            dealerHand.add(deck.draw());
+            System.out.print("Dealer draws ");
+            PrintLastCardDrawn(dealerHand);
+        }
+        int dealerScore = CalculateScore(dealerHand);
+        System.out.println("Dealer score: " + dealerScore);
+        System.out.println("Your score: " + playerScore);
+        if (dealerScore > 21|| dealerScore < playerScore) GameWin();
+        else GameLoss();
+    }
+    
+    private void GameWin() {
+        game = false;
+        System.out.println("You win!");
     }
     
     private void GameLoss() {
@@ -114,7 +135,7 @@ public class Game
                 break;
             }
         }
-        System.out.println(total);
+        //System.out.println(total);
         return total;
     }
 }
